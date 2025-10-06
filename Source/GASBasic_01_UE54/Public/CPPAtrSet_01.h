@@ -2,7 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "AttributeSet.h"
-#include "AbilitySystemComponent.h" // <-- must be included
+#include "AbilitySystemComponent.h" // <-- Must be included
 #include "CPPAtrSet_01.generated.h"
 
 #define ATRB_ACCESS_01(ClassName, PropertyName) \
@@ -12,13 +12,12 @@
 	GAMEPLAYATTRIBUTE_VALUE_INITTER(PropertyName)
 
 UCLASS()
-class GASBASIC_01_UE54_API UCPPAtrSet_01 : public UAttributeSet{
+class GASBASIC_01_UE54_API UCPPAtrSet_01 : public UAttributeSet
+{
 	GENERATED_BODY()
 
 public:
-	
 	UCPPAtrSet_01();
-
 
 	UPROPERTY(BlueprintReadOnly, Category = "ATR_01")
 	FGameplayAttributeData Health_01;
@@ -34,5 +33,4 @@ public:
 
 	UPROPERTY(BlueprintReadOnly, Category = "ATR_01")
 	FGameplayAttributeData SuperMagic_01;
-	
 };
